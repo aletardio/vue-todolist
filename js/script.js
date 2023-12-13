@@ -33,7 +33,10 @@ createApp ({
         }
     },
     methods: {
-        
+        deleteItem(index){
+            // Utilizzo dello splice per rimuovere l'oggetto dall'array
+            this.todo_list.splice(index, 1);
+        }
     },
 
 

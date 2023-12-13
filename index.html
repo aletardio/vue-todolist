@@ -36,14 +36,17 @@
                                     Toboolist
                                 </h1>
                                 <ul class="list-unstyled">
-                                    <li class="my-3" v-for="(todo, index) in todo_list" key="index" :class="todo.done ? 'text-decoration-line-through bg-blue' : ''">
+                                    <li class="my-4" v-for="(todo, index) in todo_list" key="index" :class="todo.done ? 'text-decoration-line-through bg-blue' : ''">
                                         <div class="d-flex justify-content-between px-3">
-                                            <span>
+                                            <span class="my-2">
                                                 {{ todo.text }}
                                             </span>
-                                            <div class="buttons">
+                                            <div class="buttons ">
                                                 <button class="btn btn-sm btn-square" :class="todo.done ? 'btn-dark' : 'btn-primary'" @click="todo.done = !todo.done">
                                                     <i class="fas" :class="todo.done ? 'fa-times' : 'fa-check'"></i>
+                                                </button>
+                                                <button class="btn btn-sm btn-square btn-danger m-2" @click="deleteItem(index)">
+                                                    <i class="fas fa-trash"></i>
                                                 </button>
                                             </div>
                                         </div>
