@@ -22,3 +22,7 @@ main {
 .bg-blue {
     background-color: #00143372;
 }
+
+input.form-control {
+    width: 85%;
+}
