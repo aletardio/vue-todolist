@@ -10,11 +10,11 @@ img {
 
 main {
     background-color: #001433;
+    height: 820px;
 }
 
 .todolist-container {
     background-color: #fff;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
-    height: 600px;
 }
