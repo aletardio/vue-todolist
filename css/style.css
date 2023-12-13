@@ -18,3 +18,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
 }
+
+.bg-blue {
+    background-color: #00143372;
+}
