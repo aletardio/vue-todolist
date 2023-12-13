@@ -35,8 +35,11 @@ createApp ({
     },
     methods: {
         deleteItem(index){
-            // Utilizzo dello splice per rimuovere l'oggetto dall'array
-            this.todo_list.splice(index, 1);
+            let confirmation = confirm('Sei sicuro di voler cancellare questo elemento?')
+            if(confirmation){
+                // Utilizzo dello splice per rimuovere l'oggetto dall'array
+                this.todo_list.splice(index, 1);
+            }
         },
         addItem(){
             if (this.newItemName) {
