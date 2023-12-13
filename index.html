@@ -34,6 +34,15 @@
                                 <h1 class="text-center fw-bold mb-3">
                                     Toboolist
                                 </h1>
+                                <ul class="list-unstyled">
+                                    <li class="m-3" v-for="(todo, index) in todo_list" key="index" :class="todo_list.done ? 'text-decoration-line-through' : ''">
+                                        <div class="d-flex justify-content-between px-3">
+                                            <span>
+                                                {{ todo.text }}
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
