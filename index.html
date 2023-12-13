@@ -36,7 +36,7 @@
                                     Toboolist
                                 </h1>
                                 <ul class="list-unstyled">
-                                    <li class="my-4" v-for="(todo, index) in todo_list" key="index" :class="todo.done ? 'text-decoration-line-through bg-blue' : ''">
+                                    <li @click="todo.done = !todo.done" class="my-4" v-for="(todo, index) in todo_list" key="index" :class="todo.done ? 'text-decoration-line-through bg-blue' : ''">
                                         <div class="d-flex justify-content-between px-3">
                                             <span class="my-2">
                                                 {{ todo.text }}
